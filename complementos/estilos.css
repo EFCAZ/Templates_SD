@@ -1,0 +1,259 @@
+body {
+    font-family: "Barlow", sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px 0 40px;
+}
+
+#trocar_nome {
+	background-color: #FFF;
+	color: #000;
+	border-radius: 10px;
+	border-width: 1px;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+#nome_usuario {
+	font-weight: bold;
+}
+
+#trocar_nome:hover {
+	background-color: #1C1C1C;
+	color: #FFF;
+}
+
+#corpo {
+	width: 84%;
+	display: flex;
+	justify-content: space-between;
+}
+
+section {
+	width: 32%;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 15px;
+	background-color: #FFF;
+}
+
+.titulo {
+	border-radius: 15px 15px 0 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.titulo i {
+	margin-right: 10px;
+}
+
+.conteudo {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+article {
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	cursor: pointer	;
+}
+
+article:hover {
+	font-weight: bold;
+	color: #FFF;
+}
+
+hr {
+	border-width: 0;
+	border-bottom: 1px solid #1565c0;
+	width: 100%;
+	margin: 0;
+}
+
+
+/* Chat */
+
+#chat_container, #chat_container .titulo{
+	border-color: #9fceb0;
+}
+
+#chat_container .titulo {
+	background-color: #edfdf3;
+	color: #16a285;
+}
+
+#chat_container article {
+	border: 1px solid #16a285;
+}
+
+#chat_container article:hover {
+	background-color: #16a285;
+}
+
+
+/* Envios */
+
+#envios_container, #envios_container .titulo{
+	border-color: #f8a8c2;
+}
+
+#envios_container .titulo {
+	background-color: #fde4ec;
+	color: #e75480;
+}
+
+#envios_container article {
+	border: 1px solid #e75480;
+}
+
+#envios_container article:hover {
+	background-color: #e75480;
+}
+
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #e75480;
+    font-size: 1;1em;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; /* ESSENCIAL */
+}
+
+.modal-content input,
+.modal-content textarea {
+    border: 1px solid #ccc;
+    outline-color: #f8a8c2;
+}
+
+.modal-content textarea {
+	height: 70px;
+}
+
+.modal-content button {
+    background: #fde4ec;
+    color: #e75480;
+    border: 2px solid #f8a8c2;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.modal-content button:hover {
+    background: #e75480;
+    color: #fff;
+}
+
+.fechar {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fechar:hover {
+	color: #e75480;
+}
+
+
+
+
+/* Ligação */
+
+#ligacao_container, #ligacao_container .titulo {
+	border-color: #64b5f6;
+}
+
+#ligacao_container .titulo {
+	background-color: #e3f2fd;
+	color: #1565c0;
+}
+
+#ligacao_container article {
+	border: 1px solid #1565c0;
+}
+
+#ligacao_container article:hover {
+	background-color: #1565c0;
+}
+
+
+
+/* NOTIFICAÇÃO */
+#notificacao {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background: #4caf50;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.4s forwards, fadeOut 0.4s 2.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+}
