@@ -1,5 +1,5 @@
 // Inicializa o nome do usuário
-let nomeUsuario = localStorage.getItem("nomeUsuario") || "Kethllen";
+let nomeUsuario = localStorage.getItem("nomeUsuario") || "";
 
 // Atualiza mensagens que usam o nome do usuário
 function atualizarMensagens() {
