@@ -50,12 +50,12 @@ const mensagens = {
     saudacao_efcaz: "",
     saudacao_besign: "",
     solicitacao_info: `Para que eu possa te ajudar, preciso que você me passe algumas informações:\n\n• Qual link de site você está usando?\n• CNPJ:\n• Seu nome:\n• Seu e-mail`,
-    pedido_espera: "Obrigada pelas informações, aguarde só um instante enquanto eu ",
+    pedido_espera: "Obrigada pelas informações, aguarde só um instante enquanto eu verifico.",
     indicar_kb: "Nós temos na nossa base de conhecimento um passo a passo de como fazer esse processo:\nXXXXXXX\n\nPor favor, faça conforme descrito nesse guia e conseguirá XXXXXXX corretamente.\nE se precisar, me chama que eu te ajudo tá bom?",
     envio_n2: "Vi que essa solicitação vai precisar passar pela análise do time de segundo nível.\nEncaminhei o chamado para eles e assim que tivermos uma resposta, iremos notificar por e-mail e ligação telefônica.",
     finalizar: "Se você tiver mais dúvidas, por favor nos retorne. Seu chamado será encaminhado via e-mail. Ajudo em algo mais?",
     pesquisa: "Além disso, você irá receber uma pesquisa de satisfação do meu atendimento em seu e-mail, agradeço se puder nos deixar sua avaliação. Sua opinião faz toda a diferença para nós. 💙 💜\n\nQuando tiver um tempinho nos avalie no Google 😉\nEsse é o link: https://g.page/r/CenXqb9lW9MGEAE/review",
-    contato: "Nosso atendimento funciona de segunda a sexta-feira, das 8h30 às 17h30.\n\nSempre que precisar, você pode nos contatar por um dos canais abaixo:\n\n📧 E-mail: suporte@efcaz.com.br\n📱 WhatsApp: +55 (11) 5330-1518\n📞 Ligação: +55 (11) 5043-6383\n💬 Chat: disponível diretamente na plataforma"
+    contato: "Nosso atendimento funciona de segunda a sexta-feira, das 9h00 às 18h00.\n\nSempre que precisar, você pode nos contatar por um dos canais abaixo:\n\n📧 E-mail: suporte@efcaz.com.br\n📱 WhatsApp: +55 (11) 5330-1518\n📞 Ligação: +55 (11) 5043-6383\n💬 Chat: disponível diretamente na plataforma"
 };
 
 // Inicializa mensagens e span
